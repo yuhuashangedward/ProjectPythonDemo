@@ -61,8 +61,20 @@ for item in test:
 # a = name[0:3]
 # print(a)
 
+# name = " aleX"
+# length = len(name)
+# print(length)
+# a = name[length-2:length]
+# print(a)
+
+# name = " aleX"
+# a = name.index('e')
+# print(a)
+
+# name = " aleX"
+# a = name[0:-1]
+# print(a)
+
 name = " aleX"
-length = len(name)
-print(length)
-a = name[length-2:length]
-print(a)
+for i in name:
+    print(i)
