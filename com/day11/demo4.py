@@ -75,6 +75,15 @@ for item in test:
 # a = name[0:-1]
 # print(a)
 
-name = " aleX"
-for i in name:
-    print(i)
+# name = " aleX"
+# for i in name:
+#     print(i)
+
+# li =  ['alex', 'eric', 'rain']
+# t = '_'
+# r = t.join(li)
+# print(r)
+
+test = "Hello World!"
+r = test.range()
+print(r)
