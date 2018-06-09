@@ -89,6 +89,39 @@
 # r2 = test.endswith('k')
 # print(r1,r2)
 
-test = "Alec"
-r = test.swapcase()
-print(r)
+# test = "Alec"
+# r = test.swapcase()
+# print(r)
+#
+# test = "郑建文"
+# for a in test:
+#     continue
+# print(a)
+
+# 帮助创建连续的数字，通过设置步长来指定不连续
+# v = range(0, 100,5)
+# print(v)
+#
+# for item in v:
+#     print(item)
+
+# test = "郑建文有种冲我来"
+#
+# demo = input('>>>')
+# if(test.__contains__(demo)):
+#  #   for demo in test:
+#     print(demo)
+#     print(test.index(demo))
+# else:
+#     print("输入错误")
+
+test = input(">>>")
+print(test)
+l = len(test)
+print(l)
+
+r = range(0, l)
+for item in r:
+    print(item, test[item])
+
+str
