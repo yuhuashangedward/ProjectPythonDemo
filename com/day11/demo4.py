@@ -85,5 +85,7 @@ for item in test:
 # print(r)
 
 test = "Hello World!"
-r = test.range()
-print(r)
+r = range(0, 10, 2)
+for i in r:
+    print(i, type(r))
+# print(r)
