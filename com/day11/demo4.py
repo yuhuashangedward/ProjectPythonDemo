@@ -137,37 +137,77 @@ for item in test:
 # demo = template.format(param1, param2, param3)
 # print(demo)
 
-def check_code():
-    import random
-    checkcode = ''
-    for i in range(4):
-        current = random.randrange(0, 4)
-        if current != i:
-            temp = chr(random.randint(65, 90))
-        else:
-            temp = random.randint(0, 9)
-        checkcode += str(temp)
-    return checkcode
+# def check_code():
+#     import random
+#     checkcode = ''
+#     for i in range(4):
+#         current = random.randrange(0, 4)
+#         if current != i:
+#             temp = chr(random.randint(65, 90))
+#         else:
+#             temp = random.randint(0, 9)
+#         checkcode += str(temp)
+#     return checkcode
+#
+#
+# code = check_code()
+# print(code)
+#
+# count = 0
+#
+# while(True):
+#     if (count > 5 or 5 - count == 0):
+#         print("超过次数限制")
+#         break
+#     input('用户输入验证码')
+#     customer_code = input('>>>')
+#     user_code = customer_code.lower()
+#     real_code = check_code = code.lower()
+#     count = count + 1
+#
+#     if(real_code == user_code):
+#         print("恭喜你，验证码输入正确！")
+#         break
+#     else:
+#         print("验证码错误，您还有"+str(5-count)+"次机会，请重新输入：")
 
+# gui1 = "苍老师"
+# reg1 = "***"
+#
+# gui2 = "东京热"
+# reg2 = "***"
+#
+#
+# input("请输入评论")
+# user = input(">>>")
+#
+# yue1 = str.maketrans(gui1, reg1)
+# yue2 = str.maketrans(gui2, reg2)
+#
+# show = user.translate(yue1)
+# rest = show.translate(yue2)
+#
+# print(rest)
+#
+# input("请输入评论")
+# user = input(">>>")
+# user = user.replace("苍老师", "***")
+# user = user.replace("东京热", "***")
+# print(user)
 
-code = check_code()
-print(code)
-
-count = 0
-
-while(True):
-    if (count > 5 or 5 - count == 0):
-        print("超过次数限制")
-        break
-    input('用户输入验证码')
-    customer_code = input('>>>')
-    user_code = customer_code.lower()
-    real_code = check_code = code.lower()
-    count = count + 1
-
-    if(real_code == user_code):
-        print("恭喜你，验证码输入正确！")
-        break
-    else:
-        print("验证码错误，您还有"+str(5-count)+"次机会，请重新输入：")
+# s = ""
+#
+# while(True):
+#     v1 = input('>>>')
+#     v2 = input('>>>')
+#     v3 = input('>>>')
+#     template = "{0}\t{1}\t{2}\t"
+#     v = template.format(v1, v2, v3)
+#
+#     s = s + v
+#
+#     if(v1 == 'q' or v2 == 'q' or v3 == 'q'):
+#         break
+#
+# print(s.expandtabs(20))
 
