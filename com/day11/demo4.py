@@ -84,8 +84,45 @@ for item in test:
 # r = t.join(li)
 # print(r)
 
-test = "Hello World!"
-r = range(0, 10, 2)
-for i in r:
-    print(i, type(r))
+# test = "Hello World!"
+# r = range(0, 10, 2)
+# for i in r:
+#     print(i, type(r))
 # print(r)
+
+
+
+# name = " aleX"
+# # print(name[])
+# for i in range(len(name)):
+#     print(name[i])
+
+
+
+# content = input('请输入内容：')
+# print(content)
+# num = content.split("+")
+# sum = 0
+# for i in range(len(num)):
+#     sum = sum + int(num[i])
+# print(sum)
+
+# content = input('请输入内容')
+# print(content)
+# num1, num2 = content.split('+')
+# num1 = int(num1)
+# num2 = int(num2)
+# sum = num1 + num2
+# print(sum)
+
+test = input('请输入内容：')
+c1 = 0
+c2 = 0
+val = input(">>>")
+for item in val:
+    if item.isalnum():
+        c1 += 1
+        if item.isalpha():
+            c2 += 1
+print("数字个数:" + str(c1 - c2))
+print("字母个数：" + str(c2))
