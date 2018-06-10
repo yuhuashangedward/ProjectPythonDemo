@@ -115,14 +115,59 @@ for item in test:
 # sum = num1 + num2
 # print(sum)
 
-test = input('请输入内容：')
-c1 = 0
-c2 = 0
-val = input(">>>")
-for item in val:
-    if item.isalnum():
-        c1 += 1
-        if item.isalpha():
-            c2 += 1
-print("数字个数:" + str(c1 - c2))
-print("字母个数：" + str(c2))
+# test = input('请输入内容：')
+# c1 = 0
+# c2 = 0
+# val = input(">>>")
+# for item in val:
+#     if item.isalnum():
+#         c1 += 1
+#         if item.isalpha():
+#             c2 += 1
+# print("数字个数:" + str(c1 - c2))
+# print("字母个数：" + str(c2))
+
+# input("请输入名字：")
+# param1 = input('>>>')
+# input("请输入地点：")
+# param2 = input('>>>')
+# input("请输入爱好：")
+# param3 = input('>>>')
+# template = "敬爱可亲的{0}，最喜欢在{1}，{2}"
+# demo = template.format(param1, param2, param3)
+# print(demo)
+
+def check_code():
+    import random
+    checkcode = ''
+    for i in range(4):
+        current = random.randrange(0, 4)
+        if current != i:
+            temp = chr(random.randint(65, 90))
+        else:
+            temp = random.randint(0, 9)
+        checkcode += str(temp)
+    return checkcode
+
+
+code = check_code()
+print(code)
+
+count = 0
+
+while(True):
+    if (count > 5 or 5 - count == 0):
+        print("超过次数限制")
+        break
+    input('用户输入验证码')
+    customer_code = input('>>>')
+    user_code = customer_code.lower()
+    real_code = check_code = code.lower()
+    count = count + 1
+
+    if(real_code == user_code):
+        print("恭喜你，验证码输入正确！")
+        break
+    else:
+        print("验证码错误，您还有"+str(5-count)+"次机会，请重新输入：")
+
