@@ -10,3 +10,7 @@ for item in a:
     print(item)
 
 print(id(a))
+
+list = [1,2,3,4,5,6,7,8,9]
+print(list)
+print(list.__len__())
